@@ -1,0 +1,55 @@
+[2025-12-05 22:08:26] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:212)
+[stacktrace]
+#0 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(137): Illuminate\\Log\\LogManager->resolve(NULL, NULL)
+#1 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(124): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(681): Illuminate\\Log\\LogManager->driver()
+#3 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(317): Illuminate\\Log\\LogManager->error('Method Illumina...', Array)
+#4 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(278): Illuminate\\Foundation\\Exceptions\\Handler->reportThrowable(Object(BadMethodCallException))
+#5 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(523): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(BadMethodCallException))
+#6 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(203): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(BadMethodCallException))
+#7 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\artisan(24): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2025-12-05 22:08:26] laravel.ERROR: Method Illuminate\Foundation\Console\ClosureCommand::hourly does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method Illuminate\\Foundation\\Console\\ClosureCommand::hourly does not exist. at C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Macroable\\Traits\\Macroable.php:112)
+[stacktrace]
+#0 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\routes\\console.php(8): Illuminate\\Console\\Command->__call('hourly', Array)
+#1 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\app\\Console\\Kernel.php(19): require('C:\\\\Users\\\\fatha\\\\...')
+#2 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(453): App\\Console\\Kernel->commands()
+#3 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(199): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#4 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\artisan(24): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2025-12-05 22:08:42] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:212)
+[stacktrace]
+#0 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(137): Illuminate\\Log\\LogManager->resolve(NULL, NULL)
+#1 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(124): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(681): Illuminate\\Log\\LogManager->driver()
+#3 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(317): Illuminate\\Log\\LogManager->error('file_get_conten...', Array)
+#4 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(278): Illuminate\\Foundation\\Exceptions\\Handler->reportThrowable(Object(ErrorException))
+#5 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(523): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(ErrorException))
+#6 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(203): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(ErrorException))
+#7 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\artisan(24): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 {main}
+"} 
+[2025-12-05 22:08:42] laravel.ERROR: file_get_contents(C:\Users\fatha\OneDrive\Desktop\erp\.env): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_get_contents(C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\.env): Failed to open stream: No such file or directory at C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\KeyGenerateCommand.php:100)
+[stacktrace]
+#0 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(255): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'file_get_conten...', 'C:\\\\Users\\\\fatha\\\\...', 100)
+#1 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->{closure:Illuminate\\Foundation\\Bootstrap\\HandleExceptions::forwardsTo():254}(2, 'file_get_conten...', 'C:\\\\Users\\\\fatha\\\\...', 100)
+#2 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\KeyGenerateCommand.php(100): file_get_contents('C:\\\\Users\\\\fatha\\\\...')
+#3 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\KeyGenerateCommand.php(82): Illuminate\\Foundation\\Console\\KeyGenerateCommand->writeNewEnvironmentFileWith('base64:T4BLhkMD...')
+#4 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\KeyGenerateCommand.php(47): Illuminate\\Foundation\\Console\\KeyGenerateCommand->setKeyInEnvironmentFile('base64:T4BLhkMD...')
+#5 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Console\\KeyGenerateCommand->handle()
+#6 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::{closure:Illuminate\\Container\\BoundMethod::call():35}()
+#7 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#9 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#10 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(211): Illuminate\\Container\\Container->call(Array)
+#11 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#12 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\symfony\\console\\Application.php(1088): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\symfony\\console\\Application.php(324): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\KeyGenerateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\symfony\\console\\Application.php(175): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\Users\\fatha\\OneDrive\\Desktop\\erp\\artisan(24): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 {main}
+"} 
